@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Base</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <section class="navbar"> 
+        <nav class="navbar navbar-expand-lg">
+        <div class="container">
+         <div class="d-flex col-lg-3 col-md-4 col-6">
+          <ion-icon name="cog-outline" class="ion" style="height: 50px; width: 50px;"></ion-icon>
+          <h1><span class="text-primary">T</span>Desk</h1>
+         </div>
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active nav-lien-1 bg-primary text-light p-2" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-lien" href="Blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-lien" href="#">Knowledge</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-lien" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-lien" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <ul class="dropdown-menu" id="drop">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Knowledge</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="ms-auto m-auto">
+            <button type="button" class="btn login-btn btn-light d-flex mb-3 m-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs- 
+            whatever="@getbootstrap"><ion-icon name="arrow-forward-outline"></ion-icon> Login</button>
+          </div>
+         
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+                                      
+             <div class="modal-header">
+               <h1 class="modal-title fs-5" id="exampleModalLabel">Customer Login</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+               <div class="modal-body">
+                 <form>
+                   <div class="mb-3">
+                     <div class="input-group flex-nowrap ">
+                       <span class="input-group-text p-3" id="addon-wrapping"><ion-icon name="person-circle-outline"></ion-icon></span>
+                       <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                     </div>
+                   </div>
+                   <div class="mb-3">
+                                          
+                     <div class="input-group flex-nowrap">
+                       <span class="input-group-text p-3" id="addon-wrapping"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                       <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+                     </div>
+                   </div>
+                 </form>
+               </div>
+                                         
+              <div class="container">
+               <div class="row">
+              <div class="form-group row">
+               <div class="col-6">
+                <button type="button" class="btn btn-primary btn-lg">Login</button>
+               </div>
+               <div class="col-6 text-right">
+                   <a href="#" class="font-s-14 bn1">Forgot Password ?</a>
+               </div>
+            </div>
+           </div>
+         </div>
+            <hr data-content="OR" class="divider">
+              <div class="container my-5">
+               <div class="row">
+              <div class="form-group row col-12">
+               <div class="col-4 bg-primary">
+                   <button type="button" class="btn btn-social-facebook face"> 
+                    <ion-icon name="logo-facebook" class="text-primary"></ion-icon>
+                     Facebook</button>
+               </div>
+               <div class="col-4 mx-4 bg-danger justify-content-end">
+                   <button type="button" class="btn btn-social-google goo">
+                    <ion-icon name="logo-google-playstore"></ion-icon>+
+                   Google</button>
+               </div>
+           </div>
+         </div>
+       </div>
+         <div class="row">
+           <div class="modal-footer foot">
+             Don't Have account <a href="">Create New</a>
+         </div>
+       </div>
+     </div>
+      </div>
+           </div>
+         </div>
+       </div>
+     </div>
+  
+        </div>
+      </nav>
+    </section>  
+
+    <section class="header-dash my-5 bg-primary">
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6">
+                        <div class="page-title text-light">
+                            <h2>Knowledge Base</h2>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item text-light"><a class="text-light" href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active text-light" aria-current="page">Knowledge Base</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="search-form">
+                            <form class="">
+                                <ion-icon class="free-icone" name="search-outline"></ion-icon>
+                                <input class="p-2" name="search" type="search" placeholder="Search ...">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="Page-Content">
+            <div class="container full-width">
+                <div class="row g-4">
+                    <div class="col-xl-8 col-lg-7 left-content">
+                        <div class="row g-4 category-blocks">
+                            <div class="col-lg-6 ">
+                                <div class="category-block card mb-3">
+                                    <h3><a href="#"><i class="ti-folder"></i> The Basics <span class="free-block btn-outline-primary text-black">30</span></a></h3>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#"><i class="far fa-file-alt"></i> What is Lorem Ipsum ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Where does it come from ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Where can I get some ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Why do we use it ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Lorem Ipsum is simply dummy text </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="category-block card  mb-3">
+                                    <h3><a href="#"><i class="ti-folder"></i> The Basics <span class="free-block btn-outline-primary text-black">30</span></a></h3>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#"><i class="far fa-file-alt"></i> What is Lorem Ipsum ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Where does it come from ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Where can I get some ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Why do we use it ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Lorem Ipsum is simply dummy text </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="category-block card mb-3">
+                                    <h3><a href="#"><i class="ti-folder"></i> The Basics <span class="free-block btn-outline-primary text-black">30</span></a></h3>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#"><i class="far fa-file-alt"></i> What is Lorem Ipsum ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Where does it come from ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Where can I get some ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Why do we use it ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Lorem Ipsum is simply dummy text </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="category-block  card mb-3">
+                                    <h3><a href="#"><i class="ti-folder"></i> The Basics <span class="free-block btn-outline-primary text-black">30</span></a></h3>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#"><i class="far fa-file-alt"></i> What is Lorem Ipsum ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Where does it come from ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Where can I get some ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Why do we use it ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Lorem Ipsum is simply dummy text </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="category-block  card mb-3">
+                                    <h3><a href="#"><i class="ti-folder"></i> The Basics <span class="free-block btn-outline-primary text-black">30</span></a></h3>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#"><i class="far fa-file-alt"></i> What is Lorem Ipsum ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Where does it come from ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Where can I get some ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Why do we use it ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Lorem Ipsum is simply dummy text </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="category-block card mb-3">
+                                    <h3><a href="#"><i class="ti-folder"></i> The Basics <span class="free-block btn-outline-primary text-black">30</span></a></h3>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#"><i class="far fa-file-alt"></i> What is Lorem Ipsum ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Where does it come from ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Where can I get some ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Why do we use it ? </a></li>
+                                        <li><a href="#"><i class="far fa-file-alt"></i> Lorem Ipsum is simply dummy text </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 right-content">
+                        <div class="widget card mb-3">
+                            <h3 class="widget-title p-1">Category</h3>
+                            <div class="progress bg-primary" role="progressbar" aria-label="Segment three" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                <div class="progress-bar bg-info"></div>
+                            </div>
+                            <hr>
+                            <div class="Category">
+                                <ul class="list-unstyled categories">
+                                    <li><a href="#"><i class="fal fa-file-alt p-1"></i>Creative</a></li>
+                                    <li><a href="#"><i class="fal fa-file-alt p-1"></i>Design</a></li>
+                                    <li><a href="#"><i class="fal fa-file-alt p-1"></i>Apps</a></li>
+                                    <li><a href="#"><i class="fal fa-file-alt p-1"></i>Android</a></li>
+                                    <li><a href="#"><i class="fal fa-file-alt p-1"></i>App store</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget card mb-3 mt-5" style="height: 45rem;">
+                            <h3 class="widget-title p-2">Popular Article</h3>
+                            <div class="progress bg-primary" role="progressbar" aria-label="Segment three" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                <div class="progress-bar bg-info"></div>
+                            </div>
+                            <hr>
+                            <div class="Popular-Article">
+                                <ul class="list-unstyled popular-post-widget">
+                                    <li>
+                                        <span>10 Feb, 2017 </span><br>
+                                        <a href="#">There are many variations of passages of Lorem Ipsum available</a><br>
+                                        <em><i class="far fa-thumbs-up"></i> 215,14 <i class="far fa-eye"></i> 4,547 </em>
+                                    </li><br>
+                                    <li>
+                                        <span>21 Jan, 2015 </span><br>
+                                        <a href="#">There are many variations of passages of Lorem Ipsum available</a><br>
+                                        <em><i class="far fa-thumbs-up"></i> 1,547 <i class="far fa-eye"></i> 2,547 </em>
+                                    </li><br>
+                                    <li>
+                                        <span>25 Oct, 2018 </span><br>
+                                        <a href="#">There are many variations of passages of Lorem Ipsum available</a><br>
+                                        <em><i class="far fa-thumbs-up"></i> 1,114 <i class="far fa-eye"></i> 2,987 </em>
+                                    </li><br>
+                                    <li>
+                                        <span>25 Feb, 2017 </span><br>
+                                        <a href="#">There are many variations of passages of Lorem Ipsum available</a><br>
+                                        <em><i class="far fa-thumbs-up"></i> 985 <i class="far fa-eye"></i> 1,547 </em>
+                                    </li><br>
+                                    <li>
+                                        <span>20 Aug, 2020 </span><br>
+                                        <a href="#">There are many variations of passages of Lorem Ipsum available</a><br>
+                                        <em><i class="far fa-thumbs-up"></i> 754 <i class="far fa-eye"></i> 1,232 </em>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="footer my-5">
+            <div class="menu">
+                <ul class="list-unstyled d-flex justify-content-center my-5">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Changelog</a></li>
+                </ul>
+            </div>
+            <div class="social-icons d-flex justify-content-center">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright text-center p-5">Made by <a class="text-primary liens" href="https://www.tatwerat.com/">Tatwerat</a> © 2020 AH Tickets Pty Ltd.</div>
+            </div>
+    </section>
+</body>
+</html>
